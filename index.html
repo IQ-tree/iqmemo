@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IQ.Memo - EasyToUse Memo Program</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <noscript style="position: absolute; width: 100vw; height: 100vh;">
+        <h1>NOOOOOOOOOOOOOOOOOOOOOOO!</h1>
+        <p>Javascript is not enabled in your browser. Try enabling it, or download another browser.</p>
+    </noscript>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/logo.png" onclick="location.href = '/'" class="logo">
+            <button id="navbutton" class="nanum"><span id="top-button">Start IQMemo</span> <span id="under-button">with Simple Sign Up!</span></button>
+        </div>
+        <div class="main">
+            <div class="main-first">
+                <br>
+                <h1>The fast, easy to use memo application</h1>
+                <h3>We introduce IQ Memo.</h3>
+                <br>
+                <p>IQ Memo is a fast, easy-to-use memo program, which saves your memo in cookies. This preserves a no-login feature, which will make it fast, free, safe.</p>
+                <p>Hackers could not gain access to your note, because your memo will be saved in your browser. Just be careful of people who can use your computer.</p>
+                <p>IQ Memo also provides a passcode option. A passcode could keep your data at least safe for people who can use your computer.</p>
+            </div>
+            <div class="main-second">
+                <br>
+                <h1>Privacy-safe memo application</h1>
+                <h3>IQ Memo's Privacy Policy</h3>
+                <br>
+                <p>IQ Memo doesn't send any data from the user to any web server.<sup style="cursor: pointer" onclick="popup('Notice', 'We don\'t send user data, while third-parties(e.g. Google) can collect and send your personal data. View Terms of Condition and use.') ">*</sup></p>
+            </div>
+            <div class="main-third">
+                <br>
+                <h1>Made with 💙 and JavaScript</h1>
+                <h3>Hand-made Project</h3>
+                <br>
+                <p>IQ Memo is a open-source project under MIT License.</p>
+                <p>You can use this project as it is shown in Terms of condition and use.</p>
+                <p>We &lt;3 open-source. View this project on <a href="https://github.com/iq-tree/iqmemo" target="_blank">GitHub.</a></p>
+            </div>
+            <div class="footer">
+                <div class="sub-footer">
+                    <span onclick="location.href = 'about/index.html'" class="footer-about">ABOUT</span>
+                    <span onclick="location.href = 'project/index.html'" class="footer-project">PROJECT</span>
+                    <span onclick="location.href = 'developer/index.html'" class="footer-developer">DEVELOPER</span>
+                    <span onclick="location.href = 'opensource/index.html'" class="footer-opensource">OPEN-SOURCE</span>
+                </div>
+            </div>
+    </div>
+    <div class="account">
+        <div class="account-main">
+            <h1 style="position: absolute; right: 10px; top: -30px; cursor: pointer;" onclick="closeAccount()">×</h1>
+            <p>Simple Sign Up</p> <!-- do not change this -->
+            <hr>
+            <div class="account-one">
+                <h5 style="margin: 3px;">Username</h5>
+                <div><input type="text" id="username" placeholder="Username"></div>
+                <hr>
+                <div passcode>
+                    <h5 style="margin: 3px;">Passcode(Optional)<sup id="pass-i" onclick="popup('About Passcode', 'Passcode is a 4-character sized code made of numbers and alphabets. Passcode will neither not be encrypted nor be sent to the server.')">i</sup></h5>
+                    <p style="font-size: 10px;">Leave blank for none</p><br>
+                    <div class="passcode">
+                        <img src="images/pass/0.png" id="pw-first" class="passcode-first">
+                        <select id="pw-firsts"><option value="na"></option><option value="0">0</option> <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option> <option value="6">6</option> <option value="7">7</option> <option value="8">8</option> <option value="9">9</option> <option value="A">A</option> <option value="B">B</option> <option value="C">C</option> <option value="D">D</option> <option value="E">E</option> <option value="F">F</option> <option value="G">G</option> <option value="H">H</option> <option value="I">I</option> <option value="J">J</option> <option value="K">K</option> <option value="L">L</option> <option value="M">M</option> <option value="N">N</option> <option value="O">O</option> <option value="P">P</option> <option value="Q">Q</option> <option value="R">R</option> <option value="S">S</option> <option value="T">T</option> <option value="U">U</option> <option value="V">V</option> <option value="W">W</option> <option value="X">X</option> <option value="Y">Y</option> <option value="Z">Z</option> </select>
+                    </div>
+                    <div class="passcode">
+                        <img src="images/pass/1.png" id="pw-second" class="passcord-second">
+                        <select id="pw-seconds"><option value="na"></option><option value="0">0</option> <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option> <option value="6">6</option> <option value="7">7</option> <option value="8">8</option> <option value="9">9</option> <option value="A">A</option> <option value="B">B</option> <option value="C">C</option> <option value="D">D</option> <option value="E">E</option> <option value="F">F</option> <option value="G">G</option> <option value="H">H</option> <option value="I">I</option> <option value="J">J</option> <option value="K">K</option> <option value="L">L</option> <option value="M">M</option> <option value="N">N</option> <option value="O">O</option> <option value="P">P</option> <option value="Q">Q</option> <option value="R">R</option> <option value="S">S</option> <option value="T">T</option> <option value="U">U</option> <option value="V">V</option> <option value="W">W</option> <option value="X">X</option> <option value="Y">Y</option> <option value="Z">Z</option> </select>
+                    </div>
+                    <div class="passcode">
+                        <img src="images/pass/2.png" id="pw-third" class='passcode-third'>
+                        <select id="pw-thirds"><option value="na"></option><option value="0">0</option> <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option> <option value="6">6</option> <option value="7">7</option> <option value="8">8</option> <option value="9">9</option> <option value="A">A</option> <option value="B">B</option> <option value="C">C</option> <option value="D">D</option> <option value="E">E</option> <option value="F">F</option> <option value="G">G</option> <option value="H">H</option> <option value="I">I</option> <option value="J">J</option> <option value="K">K</option> <option value="L">L</option> <option value="M">M</option> <option value="N">N</option> <option value="O">O</option> <option value="P">P</option> <option value="Q">Q</option> <option value="R">R</option> <option value="S">S</option> <option value="T">T</option> <option value="U">U</option> <option value="V">V</option> <option value="W">W</option> <option value="X">X</option> <option value="Y">Y</option> <option value="Z">Z</option> </select>
+                    </div>
+                    <div class="passcode">
+                        <img src="images/pass/3.png" id="pw-fourth" class="passcord-fourth">
+                        <select id="pw-fourths"><option value="na"></option><option value="0">0</option> <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option> <option value="6">6</option> <option value="7">7</option> <option value="8">8</option> <option value="9">9</option> <option value="A">A</option> <option value="B">B</option> <option value="C">C</option> <option value="D">D</option> <option value="E">E</option> <option value="F">F</option> <option value="G">G</option> <option value="H">H</option> <option value="I">I</option> <option value="J">J</option> <option value="K">K</option> <option value="L">L</option> <option value="M">M</option> <option value="N">N</option> <option value="O">O</option> <option value="P">P</option> <option value="Q">Q</option> <option value="R">R</option> <option value="S">S</option> <option value="T">T</option> <option value="U">U</option> <option value="V">V</option> <option value="W">W</option> <option value="X">X</option> <option value="Y">Y</option> <option value="Z">Z</option> </select>
+                    </div>
+                </div>
+                <button id="nextbutton" class="signupbutton">Next Step</button>
+            </div>
+            <div class="account-two">
+                <h5 style="margin: 3px;">Terms and conditions of use</h5>
+                <form><input id="account-two-tos" type="checkbox"><label style="font-size: 15px;">I Agree to the <a href="text/tos.txt" target="_blank">Terms and conditions of use.</a></label></form> 
+                <hr>
+                <h5 style="margin: 3px;">Privacy Policy</h5>
+                <form><input id="account-two-privacy" type="checkbox"><label style="font-size: 15px;">I Agree to the <a href="text/privacy.txt" target="_blank">Privacy Policy.</a></label></form>
+                <hr>
+                <h5 style="margin: 3px;">Language</h5>
+                <select id="language"><option value="en">English</option><option value="ko">Korean (N/A Currently)</option></select>
+                <p style="font-size: 15px;">REMINDER: We save all memo data in COOKIES. If you attempt to delete or delete cookies, all your memo data would be lost.</p>
+                <p style="font-size: 15px;">We don't collect your personal info, but third-parties can. (e.g. Google)</p>
+                <hr>
+                <button id="finishbutton" class="signupbutton">Finish Sign Up</button>
+            </div>
+        </div>
+    </div>
+    <div id="popup">
+        <h2 id="popup-title"></h2>
+        <p id="popup-paragraph"></p>
+        <h1 style="position: absolute; right: 10px; top: -25px; cursor: pointer;" onclick="closepopup()">×</h1>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> <!-- Load JQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script> <!-- js-cookie -->
+    <script src="js/etc.js"></script>
+    <script src="js/visited.js"></script>
+    <script src="js/account.js"></script>
+    <script src="js/buttonc.js"></script>
+    <script src="js/passcode.js"></script>
+</body>
+</html>
